@@ -1,0 +1,94 @@
+﻿// Essential Colors
+$white: #e8f1f2;
+
+$purplenavy : #4C6085;
+
+$onyx : #37393A;
+
+$brilliantazure : #39A0ED;
+
+$greyblue : #8D99AE;
+
+$trolley : #7E8287;
+
+
+/* Start Navbar Colors */
+
+.darkmode.blue {
+    background: $purplenavy;
+    color: $white;
+}
+
+.darkmode.blue .dropdown-menu {
+    background-color: $onyx;
+    color: $white;
+}
+
+.darkmode.blue .dropdown-menu > a {
+    color: $white;
+}
+
+.darkmode.blue .dropdown-menu > a:hover {
+    color: $purplenavy;
+}
+
+.darkmode.blue .nav-item.dropdown > a {
+    color: $white !important;
+}
+
+.darkmode.blue .nav-item > a {
+    color: $white;
+}
+
+.darkmode.blue .nav-link {
+    color: $white;
+}
+
+.darkmode.blue .navbar-light .navbar-nav .active > .nav-link {
+    color: $white;
+}
+.darkmode.blue .navbar-light .navbar-nav .active > .nav-link:hover {
+    color: $brilliantazure;
+}
+.darkmode.blue .navbar-light .navbar-nav .nav-link:hover {
+    color: $brilliantazure;
+}
+
+
+.darkmode.blue .sidebar {
+    background: $onyx;
+    color: $white;
+}
+
+.darkmode.blue .sidebar .sidebar-header {
+    background: $brilliantazure;
+}
+
+.darkmode.blue .sidebar ul p {
+    color: $white;
+}
+
+.darkmode.blue .sidebar ul li a:hover {
+    color: $greyblue;
+    background: $white;
+}
+
+.darkmode.blue .sidebar ul li.active > a, a[aria-expanded="true"]:not(.user-icon) {
+    color: $white;
+    background: $greyblue;
+}
+
+.darkmode.blue ul ul a {
+    background: $brilliantazure;
+}
+
+/* End Navbar Colors */
+
+/* Button Styles */
+
+.btn-info{
+    background-color: $brilliantazure;
+}
+.btn-info:hover, .btn-info:focus {
+    background-color: $brilliantazure;
+}

@@ -1,0 +1,67 @@
+﻿$p15rem : 1.5rem;
+$roundcorners : 25px;
+
+body {
+    background-color: $white;
+}
+
+.vert-center {
+    vertical-align: middle;
+    padding: 10% 0 10%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.btn-grad {
+    background: $blue;
+    background: linear-gradient($lightblue, $blue);
+    background: -moz-linear-gradient($lightblue, $blue);
+    background: -webkit-linear-gradient($lightblue, $blue);
+    background: -o-linear-gradient($lightblue, $blue);
+    background: -ms-linear-gradient($lightblue, $blue);
+    border-radius: $roundcorners;
+    color: $white !important;
+    padding: $p15rem;
+}
+h1 {
+    font-size: $base-h1-size;
+}
+
+p {
+    font-size: $base-reg-size;
+}
+
+/* Dashboard Styles*/
+
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content.active{
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .content {
+        width: 100%;
+    }
+    .content.active {
+        width: calc(100% - 250px);
+    }
+}

@@ -1,0 +1,31 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+$light: 200;
+$regular: 500;
+$bold: 600;
+
+$base-family: sans-serif;
+$base-font: 'Roboto';
+$thin-font: 'Roboto Condensed';
+$base-weight: $regular;
+$base-h1-size: 3em;
+$base-reg-size: 20px;
+$base-height: 1.4;
+
+body.dashbody{
+    font-family: 'Poppins',sans-serif;
+    background: #fafafa;
+}
+body.dashbody p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}

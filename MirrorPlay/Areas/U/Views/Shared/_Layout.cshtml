@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="@Url.Content("~/Images/icon.ico")" />
+    <title>@ViewBag.Title | Elevate Your Pitch</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body class="dashbody darkmode blue">
+    <div class="wrapper">
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <h3>Elevate Your Pitch</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p><strong>DASHBOARD</strong></p>
+                <li class="active">
+                    <a href="">Home</a>
+                </li>
+                <li class="">
+                    <a href="#postSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Posts</a>
+                    <ul class="collapse list-unstyled" id="postSubmenu">
+                        <li><a href="">Posts</a></li>
+                        <li><a href="">New Post</a></li>
+                        <li><a href="">Categories</a></li>
+                        <li><a href="">Tags</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#videoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Videos</a>
+                    <ul class="collapse list-unstyled" id="videoSubmenu">
+                        <li>
+                            <a href="#">Published</a>
+                        </li>
+                        <li>
+                            <a href="#">Private</a>
+                        </li>
+                        <li>
+                            <a href="#">Unlisted</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Messages</a>
+                </li>
+                <li>
+                    <a href="">Comments</a>
+                </li>
+                <li>
+                    <a href="">Analytics</a>
+                </li>
+                <li>
+                    <a href="#settingsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Settings</a>
+                    <ul class="collapse list-unstyled" id="settingsSubmenu">
+                        <li>
+                            <a href="#">Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Notifications</a>
+                        </li>
+                        <li>
+                            <a href="#">Search History &amp; Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">Advanced Settings</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+        <div id="content" class="container-fluid content">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button data-toggle="tooltip" data-placement="top" title="View Sidebar" type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-ellipsis-v"></i>
+                        <span class="sr-only">Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><i data-toggle="tooltip" data-placement="top" title="Upload New Video" class="fas fa-camera"></i><span class="mobile-show">Upload New Pitch</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i data-toggle="tooltip" data-placement="top" title="Support" class="fas fa-question"></i><span class="mobile-show">Support</span></a>
+                            </li>
+                            @Html.Partial("_UserMenuPartial")
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @Scripts.Render("~/bundles/admin")
+            @RenderSection("scripts", required: false)
+        </div>
+    </div>
+
+</body>
+</html>

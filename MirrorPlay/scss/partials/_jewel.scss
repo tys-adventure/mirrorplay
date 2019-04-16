@@ -1,0 +1,20 @@
+﻿.jewel-pod {
+    background-image: url(/Images/video-jewel.svg);
+    background-size: contain;
+    min-height: 45vh;
+    max-height: 75vh;
+    height: auto;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+.jewel-pod.right {
+    background-position: right center;
+}
+
+.jewel-pod.left {
+    background-position: left center;
+}
