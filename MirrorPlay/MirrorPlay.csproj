@@ -342,6 +342,7 @@
     <Content Include="webfonts\fa-solid-900.ttf" />
     <Content Include="webfonts\fa-solid-900.woff" />
     <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="scss\partials\_buttons.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -10136,3 +10136,25 @@ a[data-toggle="collapse"] {
     font-weight: 400; }
   .ico-med {
     font-size: 34px; } }
+
+.menu-btn {
+  margin-left: 22px; }
+
+.btn {
+  padding: 8px 36px;
+  border-radius: 22px; }
+
+.btn-primary {
+  background-color: #ff611a;
+  color: white !important;
+  border: 0; }
+
+.btn-primary:hover {
+  color: white !important;
+  background-color: #ff611a;
+  background-color: rgba(255, 97, 26, 0.8); }
+
+.btn-primary:active {
+  color: white !important;
+  background-color: #ff611a;
+  background-color: rgba(255, 97, 26, 0.8); }
