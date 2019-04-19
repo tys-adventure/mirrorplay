@@ -1,14 +1,29 @@
-﻿.jewel-pod {
-    background-image: url(/Images/video-jewel.svg);
+﻿@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Medium.eot');
+    src: url('Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('Gotham-Medium.woff2') format('woff2'), url('Gotham-Medium.woff') format('woff'), url('Gotham-Medium.ttf') format('truetype'), url('Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-style: normal;
+}
+
+.jewel-pod {
     background-size: contain;
+    font-family: Gotham;
     min-height: 45vh;
     max-height: 75vh;
     height: auto;
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
-    color: white;
     padding: 0;
+}
+
+.jewel-pod.responsive {
+    background-image: url(/Images/responsive-jewel.png);
+    background-image: url(/Images/responsive-jewel.svg);
+}
+.jewel-pod.create {
+    background-image: url(/Images/create-jewel.png);
+    background-image: url(/Images/create-jewel.svg);
 }
 
 .jewel-pod.right {

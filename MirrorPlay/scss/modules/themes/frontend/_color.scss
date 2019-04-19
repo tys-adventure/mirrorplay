@@ -4,29 +4,37 @@ $white : #e8f1f2;
 $black : #090909;
 
 $gray : #343a40;
-/* Start Navbar Colors 
-.frontend .navbar .navbar-nav .nav-item > a{
+
+$primary: #ff611a;
+
+$primary-hover: rgba(255, 97, 26, .8);
+
+h1,h2,h3,h4,h5,h6,p,span,i,.h1,.h2,.h3,.h4,.h5,.h6,.p{
+    color: $gray;
+}
+
+.btn-primary:active {
+    color: $white !important;
+    background-color: $primary;
+    background-color: $primary-hover;
+}
+.btn-primary:hover {
+    color: $white !important;
+    background-color: $primary;
+    background-color: $primary-hover;
+}
+.btn-primary {
+    background-color: $primary;
+    color: $white !important;
+}
+
+.landing *{
+    color: $white;
+}
+.jewel-pod {
     color: $white;
 }
 
-.frontend .navbar .dropdown-menu{
-    background: $gray;
+body {
+    background-color: $white;
 }
-
-.frontend .navbar .navbar-nav .dropdown-menu .dropdown-item:hover a {
-    color: $black!important;
-}
-
-.frontend .navbar .dropdown-menu > a{
-    color: $white;
-}
-
-.frontend .navbar .dropdown-menu > a:hover {
-    color: $black;
-}
-
-/* End Navbar Colors */
-
-/* Start General Colors */
-
-/* End General Colors */

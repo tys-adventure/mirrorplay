@@ -165,6 +165,9 @@
     <Content Include="Images\bg-wave.svg" />
     <Content Include="Images\Blue &amp; Black.png" />
     <Content Include="Images\Blue &amp; Black.svg" />
+    <Content Include="Images\create-jewel.jpg" />
+    <Content Include="Images\create-jewel.png" />
+    <Content Include="Images\create-jewel.svg" />
     <Content Include="Images\default-user-icon.png" />
     <Content Include="Images\Icon Text Black.png" />
     <Content Include="Images\Icon Text Black.svg" />
@@ -176,6 +179,9 @@
     <Content Include="Images\Longhand.png" />
     <Content Include="Images\placeholder.jpg" />
     <Content Include="Images\Placeholder.svg" />
+    <Content Include="Images\responsive-jewel.jpg" />
+    <Content Include="Images\responsive-jewel.png" />
+    <Content Include="Images\responsive-jewel.svg" />
     <Content Include="Images\video-jewel.png" />
     <Content Include="Images\video-jewel.svg" />
     <Content Include="Images\White on Gradient.svg" />

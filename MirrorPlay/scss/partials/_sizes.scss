@@ -1,4 +1,7 @@
-﻿@media only screen and (min-width : 1024px) {
+﻿$p15rem: 1.5rem;
+$roundcorners: 25px;
+
+@media only screen and (min-width : 1024px) {
     h1, .h1 {
         font-size: 68px;
         font-weight: 800;

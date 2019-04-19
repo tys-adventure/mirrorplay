@@ -1,11 +1,4 @@
-﻿$p15rem : 1.5rem;
-$roundcorners : 25px;
-
-body {
-    background-color: $white;
-}
-
-.vert-center {
+﻿.vert-center {
     vertical-align: middle;
     padding: 10% 0 10%;
 }
@@ -16,18 +9,6 @@ body {
     padding-left: 0px;
     margin-right: 0px;
     margin-left: 0px;
-}
-
-.btn-grad {
-    background: $blue;
-    background: linear-gradient($lightblue, $blue);
-    background: -moz-linear-gradient($lightblue, $blue);
-    background: -webkit-linear-gradient($lightblue, $blue);
-    background: -o-linear-gradient($lightblue, $blue);
-    background: -ms-linear-gradient($lightblue, $blue);
-    border-radius: $roundcorners;
-    color: $white !important;
-    padding: $p15rem;
 }
 h1 {
     font-size: $base-h1-size;
