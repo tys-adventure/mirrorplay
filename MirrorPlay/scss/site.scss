@@ -3,9 +3,13 @@
 @import "vendor/bootstrap/bootstrap-grid";
 @import "vendor/bootstrap/bootstrap-reboot";
 @import "vendor/malihu/jquery.mCustomScrollbar.min.css";
+@import "vendor/videojs/videojs";
 
 /* Import Partials */
 @import "modules/all";
 
 /* Import Partials */
 @import "partials/all";
+
+/* Import Font Awesome */
+@import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";

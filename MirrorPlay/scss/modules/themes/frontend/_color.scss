@@ -38,3 +38,15 @@ h1,h2,h3,h4,h5,h6,p,span,i,.h1,.h2,.h3,.h4,.h5,.h6,.p{
 body {
     background-color: $white;
 }
+
+.color-white, .color-white *{
+    color: $white;
+}
+
+.background-primary{
+    background-color: $primary;
+}
+
+.background-gray{
+    background-color: $gray;
+}

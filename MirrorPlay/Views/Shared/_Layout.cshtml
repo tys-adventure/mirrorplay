@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="@Url.Content("~/Images/icon.ico")" />
+    <link rel="icon" href="@Url.Content("~/Images/icon.png")" />
     <title>@ViewBag.Title | Elevate Your Pitch</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -68,11 +68,57 @@
         </div>
     </nav>
     @RenderBody()
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-    </footer>
+    <div class="container-fluid container-full-width pt5 background-primary">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-regular" src="~/Images/Longhand Whitescale.svg" />
+            </div>
+            <div class="col-md-2 color-white">
+                <h3>Services &amp; Tools</h3>
+                <ul class="list-unstyled">
+                    <li><a href="">Getting Featured</a></li>
+                    <li><a href="">Uploading</a></li>
+                    <li><a href="">Editing</a></li>
+                    <li><a href="">Sharing</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 color-white">
+                <h3>Resources</h3>
+                <ul class="list-unstyled">
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Demos</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Tutorials</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 color-white">
+                <h3>Our Company</h3>
+                <ul class="list-unstyled">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">Reach Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Brand Assets</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid container-full-width background-gray color-white pt1">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8 text-right">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">&copy; @DateTime.Now.Year Mirror Play</li>
+                    <li class="list-inline-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/091fe72160bfee34a08119a2c/b993fcf7a5a8d2b784c7869e3.js");</script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/admin")
