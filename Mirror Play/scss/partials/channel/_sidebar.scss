@@ -1,0 +1,142 @@
+﻿#sidebar-wrapper {
+    min-height: calc(100vh - 120px);
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background-color: #ff6d2d;
+    position: relative;
+    transition: all .15s ease-in-out;
+}
+
+#sidebar-wrapper.scroll {
+    min-height: 100vh!important;
+    top: 0;
+    position: fixed;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    min-width: 100%;
+    min-height: 250px;
+    max-height: 350px;
+    height: auto;
+    padding: 20px 10px 0 10px;
+    background-image: url("/Images/channel_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sidebar-wrapper .sidebar-heading img{
+    border: 6px solid white;
+    border-radius: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 4% 12% 4%;
+}
+
+#sidebar-wrapper .list-group .list-group-item{
+    background: transparent;
+    border: 0px solid;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+.content-container {
+    position: absolute;
+    right: 0;
+    width: calc( 100vw - 300px );
+    padding-top: 55px !important;
+    padding-bottom: 120px !important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+#sidebar-wrapper .channel-name {
+    min-height: 25px;
+    height: auto;
+    max-height: 75px;
+    width: calc(100% - 10%);
+    max-width: 100%;
+    margin: -10% 5% 0;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: #121212;
+}
+#sidebar-wrapper .channel-name h4{color: white;}
+#sidebar-wrapper .channel-buttons {
+    margin: 10% 25% 0;
+    width: calc(100% - 50%);
+}
+#sidebar-wrapper .channel-btn {
+    background-color: white;
+    border-radius: 10px;
+    min-width: 25px;
+    min-height: 25px;
+    height: 30px;
+    width: 30px;
+    max-width: 75px;
+    max-height: 75px;
+    padding: 3px 0;
+    text-align: center;
+    margin: 0 2.9%;
+}
+
+button.channel-btn {
+    border: 0px;
+    background: transparent;
+}
+
+#sidebar-wrapper .channel-btn:hover {
+    background-color: #121212;
+    color: #ff6d2d;
+}
+
+#sidebar-wrapper .channel-btn .fas{
+    color: #ff6d2d;
+}
+
+#sidebar-wrapper .list-group-flush{
+    margin-top: 5%;
+}
+
+#sidebar-wrapper .channel-list {
+    text-align: center;
+    width: calc(100% - 40%);
+    margin: 4% 20%;
+    color: white;
+    font-size: 22px;
+}
+#sidebar-wrapper .channel-list:hover {
+    color: #121212;
+}
+
+#sidebar-wrapper .channel-list.active {
+    text-align: center;
+    background-color: white;
+    width: calc(100% - 40%);
+    margin: 8% 20%;
+    color: #ff6d2d;
+    border-radius: 25px;
+}
+
+#sidebar-wrapper .channel-list.active:hover {
+    background-color: #121212;
+    color: #ff6d2d;
+}

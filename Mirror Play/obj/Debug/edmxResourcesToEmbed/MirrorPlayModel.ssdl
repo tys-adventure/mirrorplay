@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mirrorplay_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'mirrorplay_.mirrorplayadmin.usermeta' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="usermeta">
+    <Key>
+      <PropertyRef Name="umeta_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="meta_key" />
+      <PropertyRef Name="meta_value" />
+    </Key>
+    <Property Name="umeta_id" Type="bigint" Nullable="false" />
+    <Property Name="user_id" Type="bigint" Nullable="false" />
+    <Property Name="meta_key" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="meta_value" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'mirrorplay_.mirrorplayadmin.users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="user_login" />
+      <PropertyRef Name="user_pass" />
+      <PropertyRef Name="user_nicename" />
+      <PropertyRef Name="user_email" />
+      <PropertyRef Name="user_url" />
+      <PropertyRef Name="user_registered" />
+      <PropertyRef Name="user_activation_key" />
+      <PropertyRef Name="display_name" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="user_login" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="user_pass" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="user_nicename" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="user_email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="user_url" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="user_registered" Type="datetime" Nullable="false" />
+    <Property Name="user_activation_key" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="user_status" Type="int" />
+    <Property Name="display_name" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'mirrorplay_.mirrorplayadmin.videometa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="videometa">
+    <Key>
+      <PropertyRef Name="meta_id" />
+      <PropertyRef Name="post_id" />
+      <PropertyRef Name="meta_key" />
+      <PropertyRef Name="meta_value" />
+    </Key>
+    <Property Name="meta_id" Type="bigint" Nullable="false" />
+    <Property Name="post_id" Type="bigint" Nullable="false" />
+    <Property Name="meta_key" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="meta_value" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'mirrorplay_.mirrorplayadmin.videos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="videos">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="post_author" />
+      <PropertyRef Name="post_date" />
+      <PropertyRef Name="post_date_gmt" />
+      <PropertyRef Name="post_title" />
+      <PropertyRef Name="post_status" />
+      <PropertyRef Name="post_name" />
+      <PropertyRef Name="post_modified" />
+      <PropertyRef Name="post_modified_gmt" />
+      <PropertyRef Name="guid" />
+      <PropertyRef Name="post_type" />
+      <PropertyRef Name="post_mime_type" />
+      <PropertyRef Name="comment_count" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="post_author" Type="bigint" Nullable="false" />
+    <Property Name="post_date" Type="datetime" Nullable="false" />
+    <Property Name="post_date_gmt" Type="datetime" Nullable="false" />
+    <Property Name="post_content" Type="varchar(max)" />
+    <Property Name="post_title" Type="text" Nullable="false" />
+    <Property Name="post_status" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="comment_status" Type="varchar" MaxLength="20" />
+    <Property Name="post_name" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="post_modified" Type="datetime" Nullable="false" />
+    <Property Name="post_modified_gmt" Type="datetime" Nullable="false" />
+    <Property Name="guid" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="post_type" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="post_mime_type" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="comment_count" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="mirrorplay_ModelStoreContainer">
+    <EntitySet Name="usermeta" EntityType="Self.usermeta" store:Type="Tables" store:Schema="mirrorplayadmin">
+      <DefiningQuery>SELECT 
+    [usermeta].[umeta_id] AS [umeta_id], 
+    [usermeta].[user_id] AS [user_id], 
+    [usermeta].[meta_key] AS [meta_key], 
+    [usermeta].[meta_value] AS [meta_value]
+    FROM [mirrorplayadmin].[usermeta] AS [usermeta]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="users" EntityType="Self.users" store:Type="Tables" store:Schema="mirrorplayadmin">
+      <DefiningQuery>SELECT 
+    [users].[ID] AS [ID], 
+    [users].[user_login] AS [user_login], 
+    [users].[user_pass] AS [user_pass], 
+    [users].[user_nicename] AS [user_nicename], 
+    [users].[user_email] AS [user_email], 
+    [users].[user_url] AS [user_url], 
+    [users].[user_registered] AS [user_registered], 
+    [users].[user_activation_key] AS [user_activation_key], 
+    [users].[user_status] AS [user_status], 
+    [users].[display_name] AS [display_name]
+    FROM [mirrorplayadmin].[users] AS [users]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="videometa" EntityType="Self.videometa" store:Type="Tables" store:Schema="mirrorplayadmin">
+      <DefiningQuery>SELECT 
+    [videometa].[meta_id] AS [meta_id], 
+    [videometa].[post_id] AS [post_id], 
+    [videometa].[meta_key] AS [meta_key], 
+    [videometa].[meta_value] AS [meta_value]
+    FROM [mirrorplayadmin].[videometa] AS [videometa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="videos" EntityType="Self.videos" store:Type="Tables" store:Schema="mirrorplayadmin">
+      <DefiningQuery>SELECT 
+    [videos].[ID] AS [ID], 
+    [videos].[post_author] AS [post_author], 
+    [videos].[post_date] AS [post_date], 
+    [videos].[post_date_gmt] AS [post_date_gmt], 
+    [videos].[post_content] AS [post_content], 
+    [videos].[post_title] AS [post_title], 
+    [videos].[post_status] AS [post_status], 
+    [videos].[comment_status] AS [comment_status], 
+    [videos].[post_name] AS [post_name], 
+    [videos].[post_modified] AS [post_modified], 
+    [videos].[post_modified_gmt] AS [post_modified_gmt], 
+    [videos].[guid] AS [guid], 
+    [videos].[post_type] AS [post_type], 
+    [videos].[post_mime_type] AS [post_mime_type], 
+    [videos].[comment_count] AS [comment_count]
+    FROM [mirrorplayadmin].[videos] AS [videos]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

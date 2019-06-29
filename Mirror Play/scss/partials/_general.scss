@@ -1,0 +1,135 @@
+﻿.vert-center {
+    padding: 10% 0 10%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.container-full-width{
+    min-width: 100%;
+    width: auto;
+    padding:0 15%;
+}
+
+.h10, h20, h30, h40, h60, h70, h80, h90 {
+    height: auto;
+}
+
+.h10 {
+    min-height: 10vh;
+}
+
+.h20 {
+    min-height: 20vh;
+}
+
+.h30 {
+    min-height: 30vh;
+}
+
+.h40 {
+    min-height: 40vh;
+}
+
+.h60 {
+    min-height: 60vh;
+}
+
+.h70 {
+    min-height: 70vh;
+}
+
+.h80 {
+    min-height: 80vh;
+}
+
+.h90 {
+    min-height: 90vh;
+}
+
+.quarter-height {
+    min-height: 25vh;
+}
+
+.half-height {
+    min-height: 50vh;
+    height: auto;
+}
+
+.three-quarter-height {
+    min-height: 75vh;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: auto;
+}
+
+h1 {
+    font-size: $base-h1-size;
+}
+
+p {
+    font-size: $base-reg-size;
+}
+
+/* Dashboard Styles*/
+
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content.active{
+    width: 100%;
+}
+
+.pt5 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.pt1{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.pt1 ul{
+    margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+    .content {
+        width: 100%;
+    }
+    .content.active {
+        width: calc(100% - 250px);
+    }
+}
+
+.img-regular{
+    max-width: 300px;
+}
+
+/** Video Player CSS **/
+
+@media screen and (max-width: 768px){
+    .video-holder{
+        margin-bottom: 25px;
+    }
+}
+
+body.frontend{
+    min-height: 100%;
+}

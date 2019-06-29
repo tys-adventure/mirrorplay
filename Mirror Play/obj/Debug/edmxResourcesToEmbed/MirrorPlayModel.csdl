@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mirrorplay_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="usermeta">
+    <Key>
+      <PropertyRef Name="umeta_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="meta_key" />
+      <PropertyRef Name="meta_value" />
+    </Key>
+    <Property Name="umeta_id" Type="Int64" Nullable="false" />
+    <Property Name="user_id" Type="Int64" Nullable="false" />
+    <Property Name="meta_key" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="meta_value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="user_login" />
+      <PropertyRef Name="user_pass" />
+      <PropertyRef Name="user_nicename" />
+      <PropertyRef Name="user_email" />
+      <PropertyRef Name="user_url" />
+      <PropertyRef Name="user_registered" />
+      <PropertyRef Name="user_activation_key" />
+      <PropertyRef Name="display_name" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="user_login" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_pass" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_nicename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_url" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_registered" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="user_activation_key" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_status" Type="Int32" />
+    <Property Name="display_name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="videometa">
+    <Key>
+      <PropertyRef Name="meta_id" />
+      <PropertyRef Name="post_id" />
+      <PropertyRef Name="meta_key" />
+      <PropertyRef Name="meta_value" />
+    </Key>
+    <Property Name="meta_id" Type="Int64" Nullable="false" />
+    <Property Name="post_id" Type="Int64" Nullable="false" />
+    <Property Name="meta_key" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="meta_value" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="video">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="post_author" />
+      <PropertyRef Name="post_date" />
+      <PropertyRef Name="post_date_gmt" />
+      <PropertyRef Name="post_title" />
+      <PropertyRef Name="post_status" />
+      <PropertyRef Name="post_name" />
+      <PropertyRef Name="post_modified" />
+      <PropertyRef Name="post_modified_gmt" />
+      <PropertyRef Name="guid" />
+      <PropertyRef Name="post_type" />
+      <PropertyRef Name="post_mime_type" />
+      <PropertyRef Name="comment_count" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="post_author" Type="Int64" Nullable="false" />
+    <Property Name="post_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="post_date_gmt" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="post_content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="post_title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="post_status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="comment_status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="post_name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="post_modified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="post_modified_gmt" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="guid" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="post_type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="post_mime_type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="comment_count" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="mirrorplay" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="usermetas" EntityType="Self.usermeta" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <EntitySet Name="videometas" EntityType="Self.videometa" />
+    <EntitySet Name="videos" EntityType="Self.video" />
+  </EntityContainer>
+</Schema>

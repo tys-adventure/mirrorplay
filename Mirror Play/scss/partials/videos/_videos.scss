@@ -1,0 +1,42 @@
+﻿.list-inline-item:not(:last-child){
+    margin-right:unset;
+}
+
+.thumbnail-title{
+    font-weight: 600;
+    font-size: 13px;
+    line-height:1.8rem;
+}
+.thumbnail-author {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+.thumbnail-stats {
+    font-size: 12px;
+    line-height: 1.15rem;
+}
+
+.thumbnail-stats .views {
+    font-weight: 700;
+}
+
+.thumbnail-stats .views::after {
+    content: "•";
+    padding: 1px 5px;
+}
+
+@media all and (max-width: 1199px) {
+}
+
+@media all and (max-width: 991px) {
+    
+}
+
+@media all and (max-width: 768px) {
+    
+}
+
+@media all and (max-width: 575px) {
+   
+}

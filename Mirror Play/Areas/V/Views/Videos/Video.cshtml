@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Video";
+}
+
+<div class="container video-page-container">
+    <div class="row video-object-container">
+        <div class="col-md-12 video-player-container">
+            <div class="player">
+                <video class="afterglow" id="v_1234" poster="https://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.jpg" width="1920" height="1080" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1.mp4">
+                    <source type="video/mp4" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.mp4" data-quality="hd" />
+                    <source type="video/mp4" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.mp4" />
+                    <source type="video/webm" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.webm" data-quality="hd" />
+                    <source type="video/webm" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.webm" />
+                    <source type="video/ogg" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.ogg" data-quality="hd" />
+                    <source type="video/ogg" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.ogg" />
+                </video>
+            </div>
+            <!--<div class="embed-responsive embed-responsive-16by9 video-player">
+        <video id="player" width="640" height="365">
+            <source src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1.webm" type="video/webm">
+            <source src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1.ogv" type="video/ogv">
+            <source src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1.mp4" type="video/mp4">
+            <p>
+                Your browser doesn't support HTML5 video.
+                <a href="videos/mikethefrog.mp4">Download</a> the video instead.
+            </p>
+        </video>
+        <div id="video-controls">
+            <button type="button" id="play-pause">Play</button>
+            <input type="range" id="seek-bar" value="0">
+            <button type="button" id="mute">Mute</button>
+            <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+            <button type="button" id="full-screen">Full-Screen</button>
+        </div>
+
+    </div>-->
+            <div class="container video-content">
+                <div class="row">
+                    <div class="col-md-8 video-column-8">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><img class="author-icon" src="~/Images/usericon.svg" /></li>
+                            <li class="list-inline-item"><h2>This Is A Video Title</h2></li>
+                        </ul>
+
+                        <h4>707,364 Views</h4>
+                    </div>
+                    <div class="col-md-4 video-column-4">
+                        <ul class="list-inline dist-buttons">
+                            <li class="list-inline-item"><i class="fas fa-thumbs-up"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-thumbs-down"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-share"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-list-ul"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

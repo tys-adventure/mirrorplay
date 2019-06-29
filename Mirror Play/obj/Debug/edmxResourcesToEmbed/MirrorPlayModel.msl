@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mirrorplay_ModelStoreContainer" CdmEntityContainer="mirrorplay">
+    <EntitySetMapping Name="usermetas">
+      <EntityTypeMapping TypeName="mirrorplay_Model.usermeta">
+        <MappingFragment StoreEntitySet="usermeta">
+          <ScalarProperty Name="umeta_id" ColumnName="umeta_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="meta_key" ColumnName="meta_key" />
+          <ScalarProperty Name="meta_value" ColumnName="meta_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="mirrorplay_Model.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="user_login" ColumnName="user_login" />
+          <ScalarProperty Name="user_pass" ColumnName="user_pass" />
+          <ScalarProperty Name="user_nicename" ColumnName="user_nicename" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="user_url" ColumnName="user_url" />
+          <ScalarProperty Name="user_registered" ColumnName="user_registered" />
+          <ScalarProperty Name="user_activation_key" ColumnName="user_activation_key" />
+          <ScalarProperty Name="user_status" ColumnName="user_status" />
+          <ScalarProperty Name="display_name" ColumnName="display_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="videometas">
+      <EntityTypeMapping TypeName="mirrorplay_Model.videometa">
+        <MappingFragment StoreEntitySet="videometa">
+          <ScalarProperty Name="meta_id" ColumnName="meta_id" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="meta_key" ColumnName="meta_key" />
+          <ScalarProperty Name="meta_value" ColumnName="meta_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="videos">
+      <EntityTypeMapping TypeName="mirrorplay_Model.video">
+        <MappingFragment StoreEntitySet="videos">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="post_author" ColumnName="post_author" />
+          <ScalarProperty Name="post_date" ColumnName="post_date" />
+          <ScalarProperty Name="post_date_gmt" ColumnName="post_date_gmt" />
+          <ScalarProperty Name="post_content" ColumnName="post_content" />
+          <ScalarProperty Name="post_title" ColumnName="post_title" />
+          <ScalarProperty Name="post_status" ColumnName="post_status" />
+          <ScalarProperty Name="comment_status" ColumnName="comment_status" />
+          <ScalarProperty Name="post_name" ColumnName="post_name" />
+          <ScalarProperty Name="post_modified" ColumnName="post_modified" />
+          <ScalarProperty Name="post_modified_gmt" ColumnName="post_modified_gmt" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+          <ScalarProperty Name="post_type" ColumnName="post_type" />
+          <ScalarProperty Name="post_mime_type" ColumnName="post_mime_type" />
+          <ScalarProperty Name="comment_count" ColumnName="comment_count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

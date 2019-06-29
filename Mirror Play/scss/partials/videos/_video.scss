@@ -1,0 +1,64 @@
+﻿.video-page-container{}
+.video-object-container{}
+.video-player-container{}
+.video-player{}
+.video-content{
+    padding: 20px 0;
+}
+
+.video-column-8, .video-column-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    .video-column-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .video-column-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .video-column-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .video-column-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+.author-icon {
+    max-width: 115px;
+    max-height: 115px;
+    height: auto;
+    width: auto;
+    border-radius: 50px;
+    margin-top: -35px;
+}
+
+.dist-buttons .list-inline-item .dist-buttons.fas{
+    font-size: 1.55rem;
+}
+
+.vjs-afterglow-skin .vjs-load-progress {
+    background-color: #ff641e;
+}
