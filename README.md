@@ -9,7 +9,6 @@
 
 **Updates:** This project is updated regularly, check back periodically for changes and new features.
 
-
 ## Description
 
 Mirror Play is a cloud platform for editing, posting, and hosting videos from livestreams and video files.
