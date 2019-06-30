@@ -3,10 +3,6 @@
 
 **Tags:** cloud, video hosting, video editing, asp.net, mvc, css, html, js, sccs, razor, sql
 
-**License:** GPLv3  
-
-**License URI:** https://www.gnu.org/licenses/gpl-3.0.html 
-
 **Updates:** This project is updated regularly, check back periodically for changes and new features.
 
 
