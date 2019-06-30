@@ -1,11 +1,7 @@
 # Mirror Play
-**Contributors:** spencerkmedia
+**Contributors:** [@SpencerKMedia](https://github.com/SpencerKMedia), [@TheTylerJP](https://github.com/TheTylerJP)
 
-**Tags:** cloud, video hosting, video editing, asp.net, mvc, css, html, js, sccs, razor, sql
-
-**License:** GPLv3  
-
-**License URI:** https://www.gnu.org/licenses/gpl-3.0.html 
+**Tags:** cloud, video hosting, video editing, asp.net, mvc, css, html, js, scss, razor, sql
 
 **Updates:** This project is updated regularly, check back periodically for changes and new features.
 
