@@ -1,5 +1,5 @@
 # Mirror Play
-**Contributors:** spencerkmedia
+**Contributors:** [@SpencerKMedia](https://github.com/SpencerKMedia), [@TheTylerJP](https://github.com/TheTylerJP)
 
 **Tags:** cloud, video hosting, video editing, asp.net, mvc, css, html, js, scss, razor, sql
 
